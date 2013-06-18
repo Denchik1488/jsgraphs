@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+ <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Графики различных состояний человека</title>
+	<link href="examples.css" rel="stylesheet" type="text/css">
+	<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="excanvas.min.js"></script><![endif]-->
+	<script language="javascript" type="text/javascript" src="jquery.js"></script>
+	<script language="javascript" type="text/javascript" src="code.js"></script>
+	<script language="javascript" type="text/javascript" src="jquery.flot.js"></script>
+	<script language="javascript" type="text/javascript" src="jquery.flot.navigate.js"></script>
+
+ </head>
+<body>
+
+
+<!-- График HTML -->
+<div class="content">
+	<div id="header"><h2>Основные графики</h2></div>
+	<div id="graph-info">
+	</div>
+
+	<div class="graph-container">
+		<div id="graph" class="graph-sin"></div>
+		<p id="choices" style="float:right; width:135px;"></p>
+	</div>
+	
+	<div class="write-data">
+		<div class="error"></div>
+		<form id="foo" name="data" method="post" action="">
+			<p> Введите дату рождения:</p>
+			день: <input type="text" size="2" name="day" id="day" value="30"> 
+			месяц: <input type="text" size="2" name="month" id="month" value="12">
+			год: <input type="text" size="4" name="year" id="year" value="2013">
+			
+			<p> Введите месяц и год, за который необходимо постоить графики</p>
+			месяц: <input type="text" size="2" name="month1" id="month1" value="12">
+			год: <input type="text" size="4" name="year1" id="year1" value="2013">
+			<input type="submit" value="Построить"> 
+		</form>
+	</div>
+</div>
+<!-- Конец графика HTML-->
+</body>
+</html>
